@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的图书馆(Library App)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--顶部区域：标题与“添加新书”按钮-->
+    <header>
+        <h1>My Library</h1>
+        <button id="new-book-btn">添加新书</button>
+    </header>
+
+    <main id="library-container" class="library-grid">
+    </main>
+
+    <dialog id="book-dialog">
+        <form id="book-form">
+            <h2>Add a New Book</h2>
+
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required />
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages" min="1" required>
+            </div>
+
+            <div class="form=group checkbox-group">
+                <label for="read">Have you read it?</label>
+                <input type="checkbox" id="read" name="read">
+            </div>
+
+            <div class="form-actions">
+                <button type="button" id="cancel-btn">Cancel</button>
+                <button type="submit" id="submit-btn">Add Book</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
